@@ -26,8 +26,8 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
-<!--        不加这一段pom依赖的话，该客户端不能被纳入到Eureka的管辖范围内-->
-          <dependency>
+        <!--        不加这一段pom依赖的话，该客户端不能被纳入到Eureka的管辖范围内-->
+        <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
             <version>3.0.0</version>
@@ -45,6 +45,13 @@
                 </exclusion>
             </exclusions>
         </dependency>
+
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
+            <version>2.2.6.RELEASE</version>
+        </dependency>
+
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-loadbalancer</artifactId>
@@ -63,7 +70,6 @@
             <version>RELEASE</version>
             <scope>test</scope>
         </dependency>
-
 
 
     </dependencies>
