@@ -4,7 +4,7 @@
 
 
 ## 问题记录
-###1 使用注解@EnableFeignClients无效
+### 1 使用注解@EnableFeignClients无效
    按着demo中的pom内容，引入依赖。发现不能导入上述的注解。
    后来在下面的帖子里找到了解决办法。
    
@@ -14,7 +14,7 @@
     
    简单来说，就是因为jar包依赖升级，跟这个注解相关的jar包被迁移到了另一个依赖下。只有导入正确的那个才能正常的使用这个注解。
 
-###2。项目启动报错-Fangframework.cloud.ciled to introspect Class [org.spriontext.properties.ConfigurationPropertiesBeans] from ClassLoader [sun.misc.Launcher$AppClassLoader@18b4aac2]
+### 2 项目启动报错-Fangframework.cloud.ciled to introspect Class [org.spriontext.properties.ConfigurationPropertiesBeans] from ClassLoader [sun.misc.Launcher$AppClassLoader@18b4aac2]
    从字面的意思来看：Failed to introspect class 未能从类集合里找到指定的类。
    
    参考链接：[异常解决：java.lang.IllegalStateException: Failed to introspect Class](https://www.cnblogs.com/jpfss/p/11089083.html#_10)
@@ -61,11 +61,11 @@
   
 
 
-###3-熔断器Hystrix
+### 3-熔断器Hystrix
 **不同的服务就跟一条生产线上的组件似的，
 服务出问题的时候，最终会体现在连贯着的生产线上。所以，通常我们说的熔断都是服务服务调用端而言的**
 
-####3.1-雪崩效应和熔断器
+#### 3.1-雪崩效应和熔断器
 * 雪崩效应
 
 在微服务架构中，为了方便逻辑上的流式处理。所有服务都是跟多米诺骨牌似的关联起来的。
@@ -87,7 +87,7 @@
 
 _熔断器就是服务高可用的最后一道防线_
 
-####3.2-在Hystrix特性
+#### 3.2-在Hystrix特性
 * 断路器机制
 
 当外部请求访问后端服务超过默认的50%比例后，断路器就会变为开路状态。后面来的请求，都会被直接失败而不会流转到后端服务部分。
@@ -109,7 +109,7 @@ _如果是对性能有严格要求而且确信自己调用服务的客户端代�
 
 ###### ???Hystrix的信号模式是个啥？-待查阅
 
-####集成Hystrix熔断器的问题汇总
+#### 集成Hystrix熔断器的问题汇总
 * 问题1：在加入了HelloRemoteHystrix类后，HellRemote注入报错问题
 
   笔者在加入了HelloRemoteHystrix类后，原来的HelloRemote注入出现了红色的波浪线错误。
