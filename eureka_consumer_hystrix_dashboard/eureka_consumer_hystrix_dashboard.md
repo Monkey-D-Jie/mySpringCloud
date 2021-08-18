@@ -7,7 +7,7 @@
 
 _2021年8月17日17:11:17 更新_
 
-### 1-启动项目报错
+### 问题1-启动项目报错
 
 按照demo中的做法，把maven依赖加上后，启动项目，报错了。
 
@@ -27,11 +27,28 @@ _2021年8月17日17:11:17 更新_
 
 * 帖子2[SpringBoot报错：java.lang.NoSuchMethodError: javax.servlet.ServletContext.getVirtualServerName()Ljava/lang/String](https://www.cnblogs.com/lvbinbin2yujie/p/10726122.html)
 
-
-
-
-
-
 考虑2：少了依赖
 
 那就从这块儿入手。在网上找了下，更多的帖子都指向了jar包冲突这个方向。
+
+_2021年8月18日16:57:47 更新_
+
+### 问题2-进入monintor后报错[Unable to connect to Command Metric Stream]
+
+不晓得这是什么原因造成的。只有先搜为敬了。
+
+在一番搜罗后，找到了解决办法
+
+帖子1：
+(41条消息) Unable to connect to Command Metric Stream. 问题解决_大痴小乙的博客-CSDN博客
+https://blog.csdn.net/fxbin123/article/details/82322476
+
+帖子2：
+(41条消息) springboot2.0下hystrix dashboard Unable to connect to Command Metric Stream解决办法_ddxd0406的博客-CSDN博客
+https://blog.csdn.net/ddxd0406/article/details/79643059?utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromMachineLearnPai2%7Edefault-1.control&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromMachineLearnPai2%7Edefault-1.control
+
+帖子3：就是在这篇帖子里找到的解决方案
+(41条消息) 问题记录：Hystrix Dashboard 提示：Unable to connect to Command Metric Stream._Coufran的博客-CSDN博客
+https://blog.csdn.net/Coufran/article/details/108107952
+
+
