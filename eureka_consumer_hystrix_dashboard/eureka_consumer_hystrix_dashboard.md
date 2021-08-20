@@ -37,7 +37,11 @@ _2021年8月18日16:57:47 更新_
 
 不晓得这是什么原因造成的。只有先搜为敬了。
 
-在一番搜罗后，找到了解决办法
+在一番搜罗后，找到了解决办法。需要注意的是，要测试这个demo的话，需要按照顺序依次把spring_cloud_eureka,eureka_producer,
+
+eureka_consumer_hystrix_dashboard3个项目启动起来。然后再到页面上输入帖子中提到的地址，查看demo的实际情况。
+
+
 
 帖子1：
 (41条消息) Unable to connect to Command Metric Stream. 问题解决_大痴小乙的博客-CSDN博客
